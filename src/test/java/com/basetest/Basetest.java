@@ -1,4 +1,4 @@
-package basetest;
+package com.basetest;
 
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;

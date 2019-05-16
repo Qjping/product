@@ -1,4 +1,4 @@
-package resources.contracts
+package contracts
 
 import com.fasterxml.jackson.dataformat.yaml.UTF8Reader
 import org.apache.tomcat.util.http.parser.AcceptLanguage
@@ -21,10 +21,10 @@ Contract.make {
     response {
         status(200)
         body('''{
-                             "name": "战国策3"
+                             "name": "战国策"
 }''')
         headers {
-            (header('Content-Type', 'application.yaml/json;charset=UTF-8'))
+            (header('Content-Type', 'application/json;charset=UTF-8'))
         }
     }
 }
