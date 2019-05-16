@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: product
+  profiles:
+     active: dev
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/cdc?serverTimezone=GMT
+    username: root
+    password: 123456
+
+server:
+  port: ${PORT:8091}
+
+mybatis:
+  type-aliases-package: qjp.domain
+  mapper-locations:
+    - mapper/*
+
+
+
