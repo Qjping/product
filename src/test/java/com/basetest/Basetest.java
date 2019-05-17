@@ -8,12 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.context.WebApplicationContext;
-import qjp.SpringBootDemo;
+import qjp.Application;
 
 //告知使用哪个运行策略
 @RunWith(SpringRunner.class)
 //表明是一个测试类
-@SpringBootTest(classes= SpringBootDemo.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes= Application.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class Basetest {
     @Autowired
     //@WebAppConfiguration是一个类级别的注释，
