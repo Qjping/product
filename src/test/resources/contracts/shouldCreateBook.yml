@@ -2,9 +2,11 @@ name: "should Create a book"
 request:
   method: GET
   url: /v1/get/1
+
 response:
   status: 200
   body:
+    id: 1
     name:  '资治通鉴'
   headers:
       Content-Type: application/json;charset=UTF-8

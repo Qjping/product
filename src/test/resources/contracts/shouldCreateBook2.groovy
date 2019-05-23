@@ -1,9 +1,6 @@
 package contracts
 
-import com.fasterxml.jackson.dataformat.yaml.UTF8Reader
-import org.apache.tomcat.util.http.parser.AcceptLanguage
-import org.eclipse.jgit.transport.TransportHttp
-import org.json.JSONObject
+
 import org.springframework.cloud.contract.spec.Contract
 Contract.make {
     description("should a number")
@@ -17,12 +14,16 @@ Contract.make {
         }
 
 
+
     }
+
     response {
         status(200)
-        body('''{
-                             "name": "战国策"
-}''')
+        body(
+                             name: "战国策",
+ //                            data: fromRequest().url()
+         
+        )
         headers {
             (header('Content-Type', 'application/json;charset=UTF-8'))
         }
