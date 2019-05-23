@@ -11,7 +11,7 @@ spring:
 server:
   port: ${PORT:8012}
 mybatis:
-  type-aliases-package: com.mywh,qjp.domain
+  type-aliases-package: qjp.domain
   mapper-locations:
     - mapper/*
 
