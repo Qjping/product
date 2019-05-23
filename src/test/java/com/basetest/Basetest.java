@@ -13,7 +13,7 @@ import qjp.Application;
 //告知使用哪个运行策略
 @RunWith(SpringRunner.class)
 //表明是一个测试类
-@SpringBootTest(classes= Application.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes= Application.class,webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class Basetest {
     @Autowired
     //@WebAppConfiguration是一个类级别的注释，
